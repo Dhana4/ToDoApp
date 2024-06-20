@@ -1,0 +1,15 @@
+<div [class.blur]="isModalOpen()">
+    <div class ="tasks_heading">
+        <h3>Today’s Tasks</h3>
+        <span>{{ formattedDate() }}</span>
+    </div>
+    <div class = "show_tasks">
+        <div class = "tasks">
+            <div *ngFor = "let task of tasks();let i = index" [ngClass]="{'primary-style': !task.status, 'secondary-style': task.status}">
+                <input type = "checkbox" [ngClass]="{'primary-style': !task.status, 'secondary-style': task.status}">
+                <span (click) = "onTaskClicked(task.id)">{{task.title | titlecase}}</span>
+                <app-task-details *ngIf="clickedTaskId() === task.id" [task]="task" [ngClass]="{'primary-style': !task.status, 'secondary-style': task.status}" (taskDeleted)="ngOnInit();changeClickedTaskId($event)" (taskCompleted)="ngOnInit()"></app-task-details>
+            </div>
+        </div>
+    </div>
+</div>

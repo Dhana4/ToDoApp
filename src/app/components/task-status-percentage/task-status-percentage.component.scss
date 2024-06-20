@@ -1,0 +1,24 @@
+.task_status_percentage{
+    padding : 1rem;
+    background-color: #BA5112;
+    border-radius: 5px;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 0.5rem;
+        img{
+            width : 4rem;
+            height : 4rem;
+        }
+        > :nth-child(2){
+            color : #ffff;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        > :nth-child(3){
+            color : #ffff;
+            font-size : 1rem;
+        }
+    }
+}

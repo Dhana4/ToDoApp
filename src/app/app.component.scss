@@ -1,0 +1,88 @@
+.main_body{
+    display : flex;
+    position: relative;
+}
+.side_nav{
+    width : 20vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 2rem;
+    h2{
+        padding : 1rem;
+        font-family: Lexend;
+        font-weight: 700;
+        color : #BA5112;
+    }
+    button{
+        width : 7rem;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        border : none;
+        box-shadow: 2px 2px 8px 0px #0000001A;
+        display : flex;
+        padding : 0.7rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor : pointer;
+        &:active{
+            transform: scale(0.95);
+        }
+        span{
+            font-size: 0.9rem;     
+        }
+        img{
+            width : 1.2rem;
+            height : 1.2rem;
+        }
+    }
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width : 100%;
+    div{
+        display: flex;
+        justify-content: center;
+        padding : 0.5rem;
+    }
+}
+.activeSession{
+    background-color:#EDB046;
+}
+a{
+    text-decoration: none;
+    color : #251814;
+}
+.heading{
+    width : 80vw;
+    height : 2.5rem;
+    margin: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    span{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    button{
+        padding: 0.7rem;
+        display : flex;
+        gap: 0.7rem;
+        border-radius: 5px;
+        border : none;
+        background-color : #BA5112;
+        cursor : pointer;
+        &:active{
+            transform: scale(0.95);
+        }
+        span{
+            font-size: 1rem;
+        }
+
+    }
+}
+.blur {
+filter: blur(2.5px);
+transition: filter 0.3s;
+}

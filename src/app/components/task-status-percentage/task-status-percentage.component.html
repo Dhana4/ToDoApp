@@ -1,0 +1,9 @@
+<div class = task_status_percentage>
+    <div>
+        <img *ngIf="percentageType() === 'Completed'" src="assets/completed_icon.svg" alt="Completed Image">
+        <img *ngIf="percentageType() === 'Active'" src="assets/active_icon.svg" alt="Active Image">
+        <span>{{ percentage() | number: '1.0-0' }}%</span>
+        <span>{{percentageType()}} tasks</span>
+    </div>
+</div>
+

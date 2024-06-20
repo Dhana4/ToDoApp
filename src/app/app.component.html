@@ -1,0 +1,25 @@
+<div class = "main_body" [class.blur]="isModalOpen()">
+    <div class = "side_nav" *ngIf = "isLogged()">
+        <h2>To-Do App</h2>
+        <button (click) = "openModel()">
+            <span>Add Task</span>
+            <img src = "assets/add_icon.svg">
+        </button>
+        <div class = "options">
+            <a routerLink="/dashboard" routerLinkActive="activeSession"><div>Dashboard</div></a>
+            <a routerLink="/active" routerLinkActive="activeSession"><div>Active</div></a>
+            <a routerLink = '/completed' routerLinkActive="activeSession"><div>Completed</div></a>
+        </div>
+    </div>
+    <div>
+        <div class = "heading" *ngIf = "isLogged()">
+            <span>{{heading()}}</span>
+            <button (click) = "signOut()">
+                <span>Sign out</span>
+                <img src = "assets/mdi_logout.svg">
+            </button>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<app-modal *ngIf = "isModalOpen()"></app-modal>

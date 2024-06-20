@@ -1,0 +1,12 @@
+div{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 2rem;
+    h1{
+        font-size: 10rem;
+    }
+    span{
+        font-size: 5rem;
+    }
+}

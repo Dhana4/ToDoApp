@@ -1,0 +1,18 @@
+<div class="modal" *ngIf="isModalOpen()">
+    <div>
+        <form [formGroup] = "addTaskForm" (ngSubmit)="onAddTask()">
+            <input type="text" formControlName="title" placeholder = "Add title">
+            <div class = "feild_required" *ngIf="addTaskForm.get('title')?.invalid && addTaskForm.get('title')?.touched">
+                Title is required
+            </div>
+            <textarea  formControlName="description" placeholder = "Add description" rows="4" cols = "15"></textarea>
+            <div class = "feild_required" *ngIf="addTaskForm.get('description')?.invalid && addTaskForm.get('description')?.touched">
+                Desription is required
+            </div>
+            <div class = "cancel_save_btns">
+                <button type = "button" (click) = "onCancel()">Cancel</button>
+                <button type="submit">{{ taskToUpdate() === null ? 'Save' : 'Update' }}</button>
+            </div>
+        </form>
+    </div>
+</div>
