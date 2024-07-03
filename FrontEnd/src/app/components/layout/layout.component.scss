@@ -1,0 +1,260 @@
+.main_body{
+    display : flex;
+    position: relative;
+}
+.side_nav{
+    width : 20vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 2rem;
+    h2{
+        font-size : 2rem;
+        padding-top : 1rem;
+        font-family: Lexend;
+        font-weight: 700;
+        color : #BA5112;
+    }
+    button{
+        width : 7rem;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        border : none;
+        box-shadow: 2px 2px 8px 0px #0000001A;
+        display : flex;
+        padding : 0.7rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor : pointer;
+        &:active{
+            transform: scale(0.95);
+        }
+        span{
+            font-size: 0.9rem;     
+        }
+        img{
+            width : 1.2rem;
+            height : 1.2rem;
+        }
+    }
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width : 100%;
+    div{
+        display: flex;
+        justify-content: center;
+        padding : 0.5rem;
+    }
+}
+.activeSession{
+    background-color:#EDB046;
+}
+a{
+    text-decoration: none;
+    color : #251814;
+}
+.heading{
+    width : 80vw;
+    height : 2.5rem;
+    margin: 1.5rem;
+    display : flex;
+    justify-content: space-between;
+    span{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+.signOut{
+    color : #FFFFFF;
+    padding: 0.7rem;
+    display : flex;
+    gap: 0.7rem;
+    border-radius: 5px;
+    border : none;
+    background-color : #BA5112;
+    cursor : pointer;
+    &:active{
+        transform: scale(0.95);
+    }
+    span{
+        font-size: 1rem;
+    }
+
+}
+.addTask{
+    display: none;
+}
+.blur {
+filter: blur(2.5px);
+transition: filter 0.3s;
+}
+
+.hamburger-menu {
+    width : 84vw;
+    margin : 1.5rem 5rem;
+    display : none;
+    position: relative;
+}
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.8rem;
+    background-color: #EDB046;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-icon {
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+}
+
+.hamburger-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width : 84vw;
+}
+.hamburger-content a {
+    color: black;
+    padding: 0.8rem;
+    text-decoration: none;
+    display: block;
+}
+.hamburger-content.show {
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .main_body{
+        margin : 0 2rem;
+    }
+    .side_nav {
+        display: none;
+    }
+    .hamburger-menu{
+        display : block;
+        width : 92vw;
+        margin : 1rem 0;
+    }
+    .heading {
+        width : 92vw;
+        margin : 1rem 0;
+        display:grid;
+        grid-template-columns: 4fr 1fr 1fr;
+    }
+    .addTask{
+        margin-right: 1rem;
+        width : 7rem;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        border : none;
+        box-shadow: 2px 2px 8px 0px #0000001A;
+        display : flex;
+        padding : 0.7rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor : pointer;
+        &:active{
+            transform: scale(0.95);
+        }
+        span{
+            font-size: 0.9rem;     
+        }
+        img{
+            width : 1.2rem;
+            height : 1.2rem;
+        }
+    }
+    .dropdown {
+        display: block;
+    }
+}
+@media screen and (max-width: 430px){
+    .main_body{
+        margin : 0 2rem;
+    }
+    .hamburger-menu{
+        width : 85vw;
+        margin : 1rem 0;
+    }
+    .heading{
+        width : 85vw;
+        margin : 1rem 0;
+        align-items: center;
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+    .addTask{
+        width : 6rem;
+        padding : 0.3rem;
+        margin-right: 0.5rem;
+    }
+    .signOut{
+        padding : 0.3rem;
+    }
+}
+@media screen and (max-width: 414px){
+    .heading{
+        width : 84vw;
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+    .signOut{
+        span{
+           font-size : 0.8rem;
+        }
+    }
+}
+@media screen and (max-width: 390px){
+    .heading{
+        width : 83.5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 375px){
+    .hamburger-menu{
+        width : 83vw;
+    }
+    .heading{
+        width : 83vw;
+        grid-template-columns: 1.7fr 1fr 1fr;
+        span{
+            font-size: 0.9rem;
+        }
+    }
+    .addTask{
+        width : 5rem;
+        span{
+            font-size: 0.7rem;
+        }
+    }
+    .signOut{
+        span{
+            font-size: 0.7rem;
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .hamburger-menu{
+        width : 81vw;
+    }
+    .heading{
+        width : 81vw;
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+    }
+}
+@media screen and (max-width: 320px){
+    .hamburger-menu{
+        width : 81vw;
+    }
+    .heading{
+        width : 81vw;
+        grid-template-columns: 1.2fr 1fr 1.2fr;
+    }
+}

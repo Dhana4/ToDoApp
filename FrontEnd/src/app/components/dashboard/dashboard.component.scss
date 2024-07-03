@@ -1,0 +1,278 @@
+.welcomeUser{
+    margin : 2rem 4rem;
+    width : 75vw;
+    height : 10rem;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    border-radius: 5px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left : 2rem;
+    position: relative;
+    img{
+        position:absolute;
+        z-index: 2;
+        width : 10rem;
+        height : 9rem;
+        top : 2.5rem;
+        right : 0;
+    }
+    h1{
+        font-size : 4rem;
+        font-weight: 500;
+    }
+    span{
+        font-size: 1rem;;
+    }
+}
+.today_tasks{
+    display : flex;
+    flex-direction: column;
+    margin : 2.2rem 4rem 0 4rem;
+    z-index: 1000;
+    section{
+        display: flex;
+        justify-content: space-between;
+        > :nth-child(2) {
+            color : #BA5112;
+            &:hover{
+                text-decoration: underline;
+            }
+            cursor: pointer;
+        }
+        > :nth-child(3){
+            color :  #251814;
+
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
+.show_tasks{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap : 5rem;
+    margin-top: 1rem;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+    overflow-y: scroll;
+    height : 22rem;
+    &::-webkit-scrollbar{
+        display : none;
+    }
+    h2{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+    div{
+        box-shadow: 2px 2px 6px 0px #0000001A;
+        border-radius: 5px;
+        display : flex;
+        align-items: center;
+        gap : 1rem;
+        padding: 1rem;
+        &.primary-style{
+            background-color: transparent;
+        }
+        &.secondary-style{
+            background-color: #EDB046;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            margin: 0;
+            font: inherit;
+            width: 1.15em;
+            height: 1.15em;   
+            border-radius: 0.15em;
+            transform: translateY(-0.075em);
+            display: grid;
+            place-content: center;
+            &.primary-style{
+                background-color: #FFFFFF;
+                border: 0.15em solid #eb9763;
+            }
+            &.secondary-style{
+                background-color: #BA5112;
+                border: 0.15em solid #BA5112;
+            }
+        }
+        input[type="checkbox"]::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+            transition: background-color 0.2s;
+            background-color: #eb9763;
+        }  
+    }
+}
+.tasksStatusPercentageAbove{
+    display: none;
+}
+.tasksStatusPercentageBelow{
+    display : flex;
+    flex-direction: column;
+    gap : 1rem;
+}
+app-dashboard-filter{
+    margin : 1rem 0;
+    padding : 0.5rem;
+    display: grid;
+    gap : 0.5rem;
+    align-items: center;
+    grid-template-columns: 0.1fr 0.1fr 5fr;
+    background-color: #faf7f7;
+    border:1px solid rgb(201, 148, 156);
+    border-radius:5px;
+}
+@media screen and (max-width: 768px) {
+    .welcomeUser{
+        width : 92vw;
+        margin : 1rem 0;
+        img{
+            height : 8.5rem;
+            top : 2.5rem;
+        }
+        h1{
+            font-size : 3rem;
+            font-weight: 400;
+        }
+    }
+    .today_tasks{
+        width : 92vw;
+        margin : 1rem 0;
+    }
+    .show_tasks {
+        width : 92vw;
+        margin-top : 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tasksStatusPercentageBelow{
+        display : none;
+    }
+    .tasksStatusPercentageAbove{
+        margin : 1rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 430px){
+    .welcomeUser{
+        width : 85vw;
+        margin : 1rem 0;
+        height : 7rem;
+        h1{
+            font-size: 1.3rem;
+        }
+        span{
+            font-size : 0.8rem;
+        }
+        img{
+            width : 6rem;
+            height : 6rem;
+            top : 2rem;
+            right : 0;
+        }
+    }
+    .tasksStatusPercentageAbove{
+        margin : 1rem 0;
+    }
+    .today_tasks{
+        width : 85vw;
+        margin : 1rem 0;
+        section{
+            span{
+                font-size : 0.8rem;
+            }
+        }
+    }
+    .show_tasks{
+        width : 85vw;
+    }
+    app-dashboard-filter{
+        gap : 0.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 390px){
+    .welcomeUser{
+        h1{
+            font-size: 1.2rem;
+        }
+        span{
+            font-size: 0.7rem;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .welcomeUser{
+        width : 83vw;
+        h1{
+            font-size: 1.1rem;
+        }
+        span{
+            font-size : 0.6rem;
+        }
+    }
+    .today_tasks{
+        width : 83vw;
+        section{
+            h3{
+                font-size : 1.2rem;
+            }
+        }
+    }
+    .show_tasks{
+        width : 83vw;
+    }
+    .tasks{
+        height : 15rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .welcomeUser{
+        width : 82vw;
+        img{
+            top : 2.5rem;
+            width : 5rem;
+            height : 5rem;
+        }
+    }
+    .today_tasks{
+        width : 82vw;
+        section{
+            span{
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .show_tasks{
+        width : 82vw;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .welcomeUser{
+        width : 81vw;
+        padding-left: 0.8rem;
+        h1{
+            font-size: 1rem;
+        }
+        span{
+            font-size: 0.5rem;
+        }
+        img{
+            width : 4.5rem;
+            height : 4.5rem;
+        }
+    }
+}

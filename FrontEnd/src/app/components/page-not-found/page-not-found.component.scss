@@ -1,0 +1,42 @@
+div{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    h1{
+        font-size: 6rem;
+    }
+    span{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 768px){
+    div{
+        h1{
+            font-size: 5rem;
+        }
+        span{
+            font-size: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 430px){
+    div{
+        h1{
+            font-size: 4rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    div{
+        h1{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.loader {
+    position: absolute;
+    z-index: 1001;
+    width: 4rem;
+    height: 4rem;
+    border: 5px solid #FFF;
+    border-bottom-color: #877ce6;
+    border-radius: 50%;
+    display: inline-block;
+    left : 50%;
+    top : 45%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
