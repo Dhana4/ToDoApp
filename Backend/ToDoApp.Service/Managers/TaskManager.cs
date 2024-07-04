@@ -96,9 +96,11 @@ public class TaskManager : ITaskManager
         task.UserId = userId;
         return _mapper.Map<TaskDTO>(await _taskRepository.UpdateTask(task));
     }
-    public async Task<bool> UpdateTaskPartial(TaskDTO taskDTO)
+    public async Task<TaskDTO?> UpdateTaskPartial(TaskDTO taskDTO)
     {
         ToDoItem task = _mapper.Map<ToDoItem>(taskDTO);
-        return await _taskRepository.UpdateTaskPartial(task);
+        ToDoItem? taskPartiallyUpdated = await _taskRepository.UpdateTaskPartial(task);
+        if (taskPartiallyUpdated == null) return null;
+        return _mapper.Map<TaskDTO>(taskPartiallyUpdated);
     }
 }

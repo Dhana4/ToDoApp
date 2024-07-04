@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Classroom\\ToDoApp\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|c:\\classroom\\todoapp\\backend\\todoapp.data\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|solutionrelative:todoapp.data\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|c:\\classroom\\todoapp\\backend\\todoapp.web\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|solutionrelative:todoapp.web\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|c:\\classroom\\todoapp\\backend\\todoapp.data\\caching\\cachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|solutionrelative:todoapp.data\\caching\\cachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E55F5F8-B9D6-42BE-AADB-50906BC09A66}|ToDoApp.Service\\ToDoApp.Service.csproj|c:\\classroom\\todoapp\\backend\\todoapp.service\\interfaces\\itaskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E55F5F8-B9D6-42BE-AADB-50906BC09A66}|ToDoApp.Service\\ToDoApp.Service.csproj|solutionrelative:todoapp.service\\interfaces\\itaskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|c:\\classroom\\todoapp\\backend\\todoapp.web\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|solutionrelative:todoapp.web\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|c:\\classroom\\todoapp\\backend\\todoapp.web\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|solutionrelative:todoapp.web\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E55F5F8-B9D6-42BE-AADB-50906BC09A66}|ToDoApp.Service\\ToDoApp.Service.csproj|c:\\classroom\\todoapp\\backend\\todoapp.service\\managers\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E55F5F8-B9D6-42BE-AADB-50906BC09A66}|ToDoApp.Service\\ToDoApp.Service.csproj|solutionrelative:todoapp.service\\managers\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|c:\\classroom\\todoapp\\backend\\todoapp.data\\interfaces\\itaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|solutionrelative:todoapp.data\\interfaces\\itaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|c:\\classroom\\todoapp\\backend\\todoapp.data\\caching\\cachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|solutionrelative:todoapp.data\\caching\\cachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|c:\\classroom\\todoapp\\backend\\todoapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE7FF8F5-67DE-4DFA-A3BE-B40E23E18121}|ToDoApp.Web\\ToDoApp.Web.csproj|solutionrelative:todoapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|c:\\classroom\\todoapp\\backend\\todoapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9C57C-805B-4A2F-A02F-7B191ECBC6DD}|ToDoApp.Data\\ToDoApp.Data.csproj|solutionrelative:todoapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,19 +47,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ITaskManager.cs",
+              "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Service\\Interfaces\\ITaskManager.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Service\\Interfaces\\ITaskManager.cs",
+              "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Service\\Interfaces\\ITaskManager.cs",
+              "RelativeToolTip": "ToDoApp.Service\\Interfaces\\ITaskManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:14:04.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskManager.cs",
+              "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Service\\Managers\\TaskManager.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Service\\Managers\\TaskManager.cs",
+              "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Service\\Managers\\TaskManager.cs",
+              "RelativeToolTip": "ToDoApp.Service\\Managers\\TaskManager.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAD4v0sAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:13:57.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITaskRepository.cs",
+              "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Interfaces\\ITaskRepository.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Data\\Interfaces\\ITaskRepository.cs",
+              "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Interfaces\\ITaskRepository.cs",
+              "RelativeToolTip": "ToDoApp.Data\\Interfaces\\ITaskRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAewBMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:13:49.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CacheKeys.cs",
               "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Caching\\CacheKeys.cs",
               "RelativeDocumentMoniker": "ToDoApp.Data\\Caching\\CacheKeys.cs",
               "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Caching\\CacheKeys.cs",
               "RelativeToolTip": "ToDoApp.Data\\Caching\\CacheKeys.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T05:39:18.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Web\\Program.cs",
               "RelativeDocumentMoniker": "ToDoApp.Web\\Program.cs",
@@ -67,52 +110,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskRepository.cs",
-              "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Repositories\\TaskRepository.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Data\\Repositories\\TaskRepository.cs",
-              "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Repositories\\TaskRepository.cs",
-              "RelativeToolTip": "ToDoApp.Data\\Repositories\\TaskRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAawB4AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:35:52.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Web\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "ToDoApp.Web\\Controllers\\TaskController.cs",
               "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Web\\Controllers\\TaskController.cs",
               "RelativeToolTip": "ToDoApp.Web\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAD4vycAAAAEAAAA",
+              "ViewState": "AQIAAGIAAAAAAAAAAAD4v2oAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T10:24:41.809Z"
+              "WhenOpened": "2024-07-01T10:24:41.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Data\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Data\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "ToDoApp.Data\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:16:20.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Web\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "ToDoApp.Web\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Classroom\\ToDoApp\\Backend\\ToDoApp.Web\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "ToDoApp.Web\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwDgAAAAuAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T09:14:41.82Z"
+              "WhenOpened": "2024-06-27T09:14:41.82Z",
+              "EditorCaption": ""
             }
           ]
         }

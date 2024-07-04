@@ -17,5 +17,5 @@ public interface ITaskRepository
     Task<ToDoItem?> DeleteTask(int id);
     Task<Boolean> DeleteAllTasks(int userId, bool? isCompleted = null, DateTime? fromDate = null, DateTime? toDate = null);
     Task<ToDoItem?> UpdateTask(ToDoItem task);
-    Task<bool> UpdateTaskPartial(ToDoItem task);
+    Task<ToDoItem?> UpdateTaskPartial(ToDoItem task);
 }

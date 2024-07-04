@@ -184,11 +184,11 @@ public class TaskController : Controller
         {
             return BadRequest(ModelState);
         }
-        bool isTaskUpdated = await _taskManager.UpdateTaskPartial(existingTask!);
-        if (!isTaskUpdated)
+        TaskDTO? taskPartiallyUpdated = await _taskManager.UpdateTaskPartial(existingTask!);
+        if (taskPartiallyUpdated == null)
         {
             return BadRequest("Failed to update employee");
         }
-        return Ok();
+        return Ok(taskPartiallyUpdated);
     }
 }

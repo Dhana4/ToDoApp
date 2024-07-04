@@ -194,13 +194,13 @@ public class TaskRepository : ITaskRepository
         }
         return null;
     }
-    public async Task<bool> UpdateTaskPartial(ToDoItem task)
+    public async Task<ToDoItem?> UpdateTaskPartial(ToDoItem task)
     {
         var existingTask = await _dbContext.Tasks.FindAsync(task.Id);
         if (existingTask != null && !existingTask.IsDeleted)
         {
             _dbContext.Entry(existingTask).State = EntityState.Detached;
-            if(task.IsCompleted)
+            if (task.IsCompleted)
             {
                 task.CompletedOn = DateTime.UtcNow;
             }
@@ -208,8 +208,9 @@ public class TaskRepository : ITaskRepository
             _dbContext.Tasks.Update(task);
             await _dbContext.SaveChangesAsync();
             ClearCache();
-            return true;
+            return task;
         }
-        return false;
+        return null;
     }
+
 }

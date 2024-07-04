@@ -18,5 +18,5 @@ public interface ITaskManager
     Task<TaskDTO?> DeleteTask(int id);
     Task<Boolean> DeleteAllTasks(bool? isCompleted = null, DateTime? fromDate = null, DateTime? toDate = null);
     Task<TaskDTO?> UpdateTask(int id, TaskAddDTO taskToUpdate);
-    Task<bool> UpdateTaskPartial(TaskDTO taskDTO);
+    Task<TaskDTO?> UpdateTaskPartial(TaskDTO taskDTO);
 }
