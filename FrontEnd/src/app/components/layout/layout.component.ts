@@ -5,6 +5,7 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } fro
 import { TokenService } from '../../services/token.service';
 import { CommonModule, NgIf } from '@angular/common';
 import { ModalComponent } from '../modal/modal.component';
+import { CacheService } from '../../services/cache.service';
 
 @Component({
   selector: 'app-layout',
@@ -21,7 +22,7 @@ export class LayoutComponent {
   heading = signal<string>("");
   isModalOpen = signal<boolean>(false);
   
-  constructor(private taskService : TaskService,private router : Router, private tokenServie : TokenService){
+  constructor(private cacheService : CacheService ,private taskService : TaskService,private router : Router, private tokenServie : TokenService){
   }
   ngOnInit(){
     this.router.events.subscribe(event => {
@@ -52,6 +53,7 @@ export class LayoutComponent {
   }
   signOut(){
     this.tokenServie.removeToken();
+    this.cacheService.removeItem();
     this.router.navigate(['/signIn']);
   }
   openModel(){

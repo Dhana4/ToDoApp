@@ -7,6 +7,7 @@ import { TokenService } from '../services/token.service';
 import { AuthService } from '../services/auth.service';
 import { Tokens } from '../interfaces/tokens';
 import { TaskService } from '../services/task.service';
+import { CacheService } from '../services/cache.service';
 
 let isRefreshing = false;
 const refreshTokenSubject: BehaviorSubject<string | null> = new BehaviorSubject<string | null>(null);
@@ -17,6 +18,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const tokenService = inject(TokenService);
   const taskService = inject(TaskService);
   const userService = inject(AuthService);
+  const cacheService = inject(CacheService);
   let tokens: Tokens | null = null;
   if (tokenString) {
     try {
@@ -63,6 +65,11 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
                   return throwError(() => new Error('Error while refreshing the tokens'));
                 })
               );
+            }
+            else{
+              tokenService.removeToken();
+              cacheService.removeItem();
+              router.navigate(['/signIn']);
             }
           } 
           else {
