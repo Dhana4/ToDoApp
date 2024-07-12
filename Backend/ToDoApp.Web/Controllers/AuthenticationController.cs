@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -54,7 +55,7 @@ public class AuthenticationController : Controller
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
         var token = new JwtSecurityToken(_configuration["Jwt:Issuer"], _configuration["Jwt:Audience"],
         new List<Claim> { new Claim("name", user.UserName), new Claim("userId",user.Id.ToString())},
-        expires: DateTime.Now.AddMinutes(100),
+        expires: DateTime.Now.AddMinutes(1),
         signingCredentials: credentials
         );
         return new JwtSecurityTokenHandler().WriteToken(token);
@@ -119,18 +120,23 @@ public class AuthenticationController : Controller
     {
         try
         {
-            IActionResult response = Unauthorized();
-            var _user = await AuthenticateUser(user);
-            if (_user != null)
+            var existingUser = await _userManager.GetUserByUserName(user.UserName);
+            if (existingUser == null)
             {
-                var accessToken = await GenerateToken(_user);
-                var refreshToken = await GenerateRefreshToken();
-                UserDTO? userDTO = await _userManager.GetUserByUserName(user.UserName);
-                userDTO!.RefreshToken = refreshToken;
-                await _userManager.UpdateUser(userDTO);
-                response = Ok(new { accessToken = accessToken , refreshToken = refreshToken });
+                return Unauthorized(new { message = "UserName does not exist" });
             }
-            return response;
+
+            var authenticatedUser = await AuthenticateUser(user);
+            if (authenticatedUser == null)
+            {
+                return Unauthorized(new { message = "Password not matched" });
+            }
+            var accessToken = await GenerateToken(authenticatedUser);
+            var refreshToken = await GenerateRefreshToken();
+            UserDTO? userDTO = await _userManager.GetUserByUserName(user.UserName);
+            userDTO!.RefreshToken = refreshToken;
+            await _userManager.UpdateUser(userDTO);
+            return Ok(new { accessToken = accessToken, refreshToken = refreshToken });
         }
         catch
         {

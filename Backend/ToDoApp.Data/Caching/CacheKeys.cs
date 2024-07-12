@@ -8,5 +8,4 @@ namespace ToDoApp.Data.Caching;
 public class CacheKeys
 {
     public static string ToDoItemCache = "ToDoItem";
-    public static string userCache = "user";
 }

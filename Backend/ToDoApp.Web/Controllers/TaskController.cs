@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using System.Threading.Tasks;
 using ToDoApp.Model.DTOs;
-using ToDoApp.Model.Models;
 using ToDoApp.Service.Interfaces;
 
 namespace ToDoApp.Web.Controllers;

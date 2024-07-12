@@ -10,6 +10,7 @@ using ToDoApp.Service.Interfaces;
 using ToDoApp.Service.Managers;
 using ToDoApp.Web;
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -17,6 +18,7 @@ builder.Services.AddCors(options =>
                          .AllowAnyMethod()
                          .AllowAnyHeader());
 });
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(Options =>
     {
